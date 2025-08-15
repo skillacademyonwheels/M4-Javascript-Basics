@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <h1>Lesson 23 Activity 2</h1> <br><br>
+    <h2>Array Methods in JS</h2>
+    <p id="demo"></p>
+    <p id="result"></p>
+    <script>
+        var fruits = ["Mangoes", "Bananas", "Guavas", "Apples"];
+        document.getElementById("demo").innerHTML = "Join Array Elements" + fruits.join(" * ");
+        document.getElementById("result").innerHTML = "Array Methods " + fruits;
+        fruits.pop();
+        document.getElementById("result").innerHTML = "Pop operation: " + fruits
+    </script>
+</body>
+
+</html>
