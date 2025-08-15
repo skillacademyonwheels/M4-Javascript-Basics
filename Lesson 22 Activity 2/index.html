@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <h1>Lesson 22 Activity 2</h1>
+    <h2>Math Operation in JS</h2><br><br>
+    <label> Trigonometric Values</label><br>
+    <input type="number" id="input_num"><br><br>
+    <select id="trig_func">
+        <option value="sine">Sine</option>
+        <option value="cos">Cosine</option>
+        <option value="tan">Tan</option>
+    </select><br><br>
+    <button onclick="myfunc()"> Click Here</button>
+    <p id="demo"></p>
+    <script>
+        function myfunc() {
+            let rad = document.getElementById("input_num").value;
+            trig_option = document.getElementById("trig_func").value;
+            switch (trig_option) {
+                case "sine":
+                    // document.write("Value: " + Math.sin(rad*180 / Math.PI))
+                    let val1 = Math.sin(rad * Math.PI / 180)
+                    val = parseFloat(val1).toFixed(2)
+                    document.getElementById("demo").innerHTML = "The value is: " + val1;
+                    break;
+                case "cos":
+                    //document.write("Value: " + Math.cos(rad * 180 / Math.PI))
+                    let val2 = Math.cos(rad * Math.PI / 180)
+                    val2 = parseFloat(val2).toFixed(2)
+                    document.getElementById("demo").innerHTML = "The value is: " + val2;
+                    break;
+                case "tan":
+                    // document.write("Value: " + Math.tan(rad * 180 / Math.PI))
+                    let val3 = Math.tan(rad * Math.PI / 180)
+                    val3 = parseFloat(val3).toFixed(2)
+                    document.getElementById("demo").innerHTML = "The value is: " + val3;
+                    break;
+                default:
+                    document.write("Try Again")
+                    break;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
