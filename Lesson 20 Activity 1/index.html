@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <h1>Lesson 20 Activity 1</h1>
+    <h2>Functions in JS</h2>
+    <button onclick="myfunc(11,22)">Execute</button>
+    <script>
+        function myfunc(x, y) {
+            if (x == undefined || y == undefined) {
+                x = 2;
+                y = 1;
+            }
+            return document.write(x * y)
+        }
+    </script>
+</body>
+
+</html>
