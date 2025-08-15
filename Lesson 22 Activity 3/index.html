@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <h1>Lesson 23 Activity 3</h1> <br><br>
+    <h2>Argument Objects in JS</h2> <br><br>
+    <p id="result"></p>
+
+    <script>
+        function findMax() {
+            let i = 0;
+            let max = 0;
+
+            for (i in arguments) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("result").innerHTML = "The Max among them is: " + findMax(11, 22, 33, 44, 55, 3, 2, 667);
+    </script>
+</body>
+
+</html>
