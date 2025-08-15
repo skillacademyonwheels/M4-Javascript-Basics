@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <h1>Lesson 21 Activity 1</h1> <br><br>
+    <h2>JavaScript String Methods</h2> <br><br>
+    <label>Enter Name</label>
+    <input type="text" id="demo" name="name"> <br><br>
+    <button onclick="myStr()"> Click me !</button>
+    <script>
+        function myStr() {
+            let str = document.getElementById("demo").value;
+            document.write(str.toUpperCase());
+            document.write("<br>");
+            document.write(str.toLowerCase());
+            document.write("<br>");
+            document.write("Starts with a: " + str.startsWith("a"));
+            document.write("<br>");
+            // Use RegEx
+            const pattern = /[0-9]/;
+            let res1 = pattern.test(str);
+            document.write("The Occurance of Number is: " + res1 ? "Present" : "NotPresent")
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
